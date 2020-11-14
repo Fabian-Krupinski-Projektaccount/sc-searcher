@@ -1,7 +1,7 @@
 {
-  "name": "sc-searcher",
+  "name": "@uggfavo/sc-searcher",
   "version": "1.0.0",
-  "description": "Gets tracks that match a search term",
+  "description": "Gets tracks that match a search term.",
   "main": "Search.js",
   "dependencies": {
     "request": "^2.88.2"
@@ -16,11 +16,14 @@
   },
   "keywords": [
     "soundcloud",
-	"soundcloud search",
-	"search",
-	"Music Search"
+    "soundcloud search",
+    "search",
+    "Music Search"
   ],
   "author": "UGGFavo",
   "license": "ISC",
-  "homepage": "https://github.com/Zein-Fakhreddine/Soundcloud-Search-Node#readme"
+  "homepage": "https://github.com/Fabian-Krupinski-Projektaccount/sc-searcher#readme",
+  "bugs": {
+    "url": "https://github.com/Fabian-Krupinski-Projektaccount/sc-searcher/issues"
+  }
 }

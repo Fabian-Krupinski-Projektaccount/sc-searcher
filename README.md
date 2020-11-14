@@ -1,11 +1,11 @@
-# Soundcloud-Search-Node
+# Sc-Searcher
 
 #Description:
-Gets tracks that match a search name given by the user from the Soundcloud database.
+Gets tracks that match a search term.
 
 #Download:
 NPM URL:
-Console Command: npm install soundcloud-search-node
+Console Command: npm install sc-searcher
 
 #ussage:
 Example:
