@@ -22,6 +22,6 @@
 
 ### Get ClientId.
 
-######1. Goto soundcloud.com and open your Developer Tools(Strg + Shift + I)
+#####1. Goto soundcloud.com and open your Developer Tools(Strg + Shift + I)
 
-######2. Watch Network Traffic and look for something like session?client_id=__egjDE3xmafwbjD9DkeUyd5PEmrdjGjfh__
+#####2. Watch Network Traffic and look for something like ######session?client_id=__egjDE3xmafwbjD9DkeUyd5PEmrdjGjfh__
