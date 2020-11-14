@@ -11,9 +11,11 @@ Console Command: npm install sc-searcher
 Example:
 ```node
 var scSearch = require('sc-searcher');
-scSearch.getTracks("Avicii", 10, function callback(tracks){
-  for(var i = 0; i < tracks.length; i++){
-      console.log(tracks[i]);
-  }
+var client_id = 'Your Client Id';
+
+scSearch.getTracks('The Song To Searcg', 10, function callback(tracks){
+    for(var i = 0; i < tracks.length; i++){
+        console.log(tracks[i]);
+    }
 });
 ```

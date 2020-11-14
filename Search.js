@@ -1,6 +1,6 @@
 const request = require('request');
 
-var searchURL = 'https://api-v2.soundcloud.com/search/tracks?q=SEARCH_TERM&client_id=' + client_id + '&limit=LIMIT_TERM';
+var searchURL = 'https://api-v2.soundcloud.com/search/tracks?q=SEARCH_TERM&client_id=CLIENT_ID&limit=LIMIT_TERM';
 
 exports.getTracks = function (client_id, search, limit, callback) {
     if(typeof search != 'string') throw "Seach term is not type of string";
@@ -15,7 +15,7 @@ exports.getTracks = function (client_id, search, limit, callback) {
         search = search.replace(" ", "%20");
     }
 
-    searchURL = searchURL.replace("SEARCH_TERM", search).replace("LIMIT_TERM", limit);
+    searchURL = searchURL.replace("CLIENT_ID", client_id).replace("SEARCH_TERM", search).replace("LIMIT_TERM", limit);
 
     request({
         url: searchURL
