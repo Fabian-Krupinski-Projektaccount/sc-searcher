@@ -10,6 +10,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fabian-Krupinski-Projektaccount/sc-searcher.git"
+  },
+  "keywords": [
+    "soundcloud",
+	"soundcloud search",
+	"search",
+	"Music Search"
+  ],
+  "author": "UGGFavo",
+  "license": "ISC",
+  "homepage": "https://github.com/Zein-Fakhreddine/Soundcloud-Search-Node#readme"
 }
