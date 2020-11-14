@@ -6,14 +6,14 @@ exports.getTracks = function (client_id, search, limit, callback) {
     if(limit > 100 || limit < 1) throw "Limit must be between 1 and 100";
     if(!client_id) throw "Must have a client id";
 
-    var searchURL = 'https://api-v2.soundcloud.com/search/tracks?q=SEARCH_TERM&client_id=CLIENT_ID&limit=LIMIT_TERM';;
+    var searchURL = 'https://api-v2.soundcloud.com/search/tracks?q=SEARCH_TERM&client_id=CLIENT_ID_TERM&limit=LIMIT_TERM';;
 
     var spaces = search.split(" ");
     for(var i=0; i < spaces.length; i++){
         search = search.replace(" ", "%20");
     }
 
-    searchURL = searchURL.replace("CLIENT_ID", client_id).replace("SEARCH_TERM", search).replace("LIMIT_TERM", limit);
+    searchURL = searchURL.replace("CLIENT_ID_TERM", client_id).replace("SEARCH_TERM", search).replace("LIMIT_TERM", limit);
 
     request({
         url: searchURL
