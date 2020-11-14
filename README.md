@@ -1,21 +1,20 @@
 # Sc-Searcher
+## A nodejs package to get soundcloud search results.
 
-#Description:
-Gets tracks that match a search term.
+### Installing via NPM.
 
-#Download:
-NPM URL:
-Console Command: npm install sc-searcher
+```$ npm i sc-searcher```
 
-#Usage:
-Example:
-```node
-var scSearch = require('sc-searcher');
-var client_id = 'Your Client Id';
+**Examples**
 
-scSearch.getTracks('The Song To Searcg', 10, function callback(tracks){
-    for(var i = 0; i < tracks.length; i++){
-        console.log(tracks[i]);
-    }
-});
-```
+    const scSearch = require('sc-searcher');
+
+    var client_id = 'Your Client Id';
+    var query = 'The Song To Search';
+    var result_limit = 5;
+
+    scSearch.getTracks(client_id, query, result_limit, function callback(tracks){
+        for(var i = 0; i < tracks.length; i++){
+            console.log(tracks[i]);
+        }
+    });
