@@ -1,5 +1,5 @@
 {
-  "name": "@uggfavo/sc-searcher",
+  "name": "sc-searcher",
   "version": "1.0.0",
   "description": "Gets tracks that match a search term.",
   "main": "Search.js",
