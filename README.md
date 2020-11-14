@@ -9,8 +9,8 @@
 
     const scSearch = require('sc-searcher');
 
-    var client_id = 'egDzE3xmafwb5ki9VMXAstPEmrdBItZq';
-    var query = 'Avicii';
+    var client_id = 'Your Client Id';
+    var query = 'The Song To Search';
     var result_limit = 5;
 
     scSearch.init(client_id);
@@ -20,6 +20,8 @@
             console.log(tracks[i]);
         }
     });
+
+
 
 ### Get ClientId.
 
