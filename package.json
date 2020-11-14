@@ -15,11 +15,16 @@
     "url": "git+https://github.com/Fabian-Krupinski-Projektaccount/sc-searcher.git"
   },
   "keywords": [
-    "sc",
     "soundcloud",
     "search",
-    "searcher",
-    "music"
+    "music",
+    "query",
+    "tracks",
+    "api",
+    "soundcloud-api",
+    "soundcloudapi",
+    "soundcloud-api-v2",
+    "nodejs"
   ],
   "author": "Fabian Krupinski <hdfavo@gmail.com>",
   "license": "ISC",
