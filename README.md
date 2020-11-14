@@ -7,13 +7,13 @@ Gets tracks that match a search term.
 NPM URL:
 Console Command: npm install sc-searcher
 
-#ussage:
+#Usage:
 Example:
 ```node
-var scSearch = require('soundcloud-search-node');
+var scSearch = require('sc-searcher');
 scSearch.getTracks("Avicii", 10, function callback(tracks){
   for(var i = 0; i < tracks.length; i++){
-      console.log(tracks[i].genre);
+      console.log(tracks[i]);
   }
 });
 ```
