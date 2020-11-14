@@ -9,16 +9,17 @@
 
     const scSearch = require('sc-searcher');
 
-    var client_id = 'Your Client Id';
-    var query = 'The Song To Search';
+    var client_id = 'egDzE3xmafwb5ki9VMXAstPEmrdBItZq';
+    var query = 'Avicii';
     var result_limit = 5;
 
-    scSearch.getTracks(client_id, query, result_limit, function callback(tracks){
+    scSearch.init(client_id);
+
+    scSearch.getTracks(query, result_limit, function callback(tracks){
         for(var i = 0; i < tracks.length; i++){
             console.log(tracks[i]);
         }
     });
-
 
 ### Get ClientId.
 
