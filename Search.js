@@ -1,12 +1,8 @@
 const request = require('request');
 
-getTracks(CLIENT_ID, 'music', 5, function callback(tracks){
-    for(var i = 0; i < tracks.length; i++){
-        console.log(tracks[i].genre);
-    }
-});
+var searchURL = 'https://api-v2.soundcloud.com/search/tracks?q=SEARCH_TERM&client_id=' + client_id + '&limit=LIMIT_TERM';
 
-function getTracks(client_id, search, limit, callback) {
+exports.getTracks = function (client_id, search, limit, callback) {
     if(typeof search != 'string') throw "Seach term is not type of string";
     if(isNaN(limit)) throw "Not a number";
     if(limit > 100 || limit < 1) throw "Limit must be between 1 and 100";
