@@ -21,6 +21,12 @@
         }
     });
 
+    scSearch.asyncGetTracks(query, result_limit, function callback(tracks){
+        for(var i = 0; i < tracks.length; i++){
+            console.log(tracks[i]);
+        }
+    });
+
 
 
 ### Get ClientId.
