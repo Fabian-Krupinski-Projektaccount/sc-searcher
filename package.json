@@ -1,6 +1,6 @@
 {
   "name": "sc-searcher",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Gets tracks that match a search term.",
   "main": "Search.js",
   "dependencies": {
@@ -27,7 +27,7 @@
     "nodejs"
   ],
   "author": "Fabian Krupinski <hdfavo@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/Fabian-Krupinski-Projektaccount/sc-searcher#readme",
   "bugs": {
     "url": "https://github.com/Fabian-Krupinski-Projektaccount/sc-searcher/issues"
