@@ -9,23 +9,17 @@
 
     const scSearch = require('sc-searcher');
 
-    var client_id = 'Your Client Id';
-    var query = 'The Song To Search';
+    var client_id = 'egDzE3xmafwb5ki9VMBsIXdrtAEmZPtq';
+    var query = 'Query';
     var result_limit = 5;
 
     scSearch.init(client_id);
 
-    scSearch.getTracks(query, result_limit, function callback(tracks){
-        for(var i = 0; i < tracks.length; i++){
-            console.log(tracks[i]);
-        }
-    });
+    (async () => {
+        var results = await scSearch.getTracks(query, result_limit);
 
-    scSearch.asyncGetTracks(query, result_limit, function callback(tracks){
-        for(var i = 0; i < tracks.length; i++){
-            console.log(tracks[i]);
-        }
-    });
+        console.log(results);
+    })();
 
 
 
