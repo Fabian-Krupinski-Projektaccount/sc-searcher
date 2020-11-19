@@ -1,6 +1,6 @@
 {
   "name": "sc-searcher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Gets tracks that match a search term.",
   "main": "Search.js",
   "dependencies": {
